@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--Sin header-->
+  <header>
+  </header>  
+
+  <!--Comienzo del main-->
+  <main>
+    <!--Titulo y subtitulo-->
+    <div class="title">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+    <!--Sección de la toda la carta-->
+    <section class="price-card">
+      <div class="card-top">
+
+        <p class="pageviews"><span id="num-pv">100K</span>&nbsp PAGEVIEWS</p>
+
+        <div class="price">
+          <h5 id="num-price">$16.00</h5>
+          <span class="month-anually" id="plan"> / month</span>
+        </div>
+
+        <div class="box-line">
+          <input type="range" min="0" max="100" autocomplete="off" step="25" id="range-line">
+        </div>
+
+        <div class="section-toggle">
+          <p>Monthly Billing</p>
+          <input type="checkbox" name="checkbox" id="toggle" autocomplete="off"> 
+          <p class="discount">Yearly Billing</p>
+        </div>
+
+      </div>
+      <hr>
+      <div class="card-bottom">
+        <ul>
+          <li><img src="./images/icon-check.svg" alt="check" class="img-check"> Unlimited websites</li>
+          <li><img src="./images/icon-check.svg" alt="check" class="img-check"> 100% data ownership</li>
+          <li><img src="./images/icon-check.svg" alt="check"class="img-check"> Email reports</li>
+        </ul>
+        <button type="submit" id="start-trial-btn">Start my trial</button>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
